@@ -1,0 +1,6 @@
+﻿Nguồn,Dữ liệu,Cách đánh giá,Metric,Giá trị,Cùng điều kiện?
+"Bản thảo trên Kaggle, CHƯA BÌNH DUYỆT (XGBoost + K-Means + lộ trình OSRM)",Cùng dataset + dữ liệu ngoài,Tập test của cuộc thi,RMSLE,0.44076,"Không – dùng dữ liệu ngoài, nguồn chưa bình duyệt"
+"Nhóm – XGBoost, nộp muộn Kaggle","Dữ liệu nhóm, KHÔNG dùng dữ liệu ngoài",Tập test của cuộc thi (chưa làm sạch),RMSLE,0.4199,"Có – cùng tập test, cùng metric"
+Baseline nội bộ – Linear Regression,Dữ liệu nhóm (đã cleaning),5-fold CV trên mẫu 200k,RMSLE,0.4035,Có
+Mô hình tốt nhất – XGBoost,Dữ liệu nhóm (đã cleaning),5-fold CV trên mẫu 200k,RMSLE,0.3071,Có
+Mô hình tốt nhất – XGBoost (train toàn bộ dev),Dữ liệu nhóm (đã cleaning),Holdout 20%,RMSLE,0.299,Có

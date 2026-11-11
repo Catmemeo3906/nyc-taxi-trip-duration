@@ -1,0 +1,14 @@
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Model & RMSLE & MAE (s) & RMSE (s) & $R^2$ & Fit (s) \\
+\midrule
+\textbf{XGBoost (full development set)} & \textbf{0.2990} & \textbf{162.8} & \textbf{287.8} & \textbf{0.8305} & \textbf{46.9} \\
+XGBoost & 0.3045 & 166.7 & 292.9 & 0.8243 & 9.7 \\
+XGBoost (tuned) & 0.3156 & 175.4 & 304.9 & 0.8111 & 6.8 \\
+Random Forest & 0.3260 & 181.2 & 312.8 & 0.7985 & 77.3 \\
+MLP & 0.3376 & 189.7 & 328.4 & 0.7839 & 41.0 \\
+Linear (baseline) & 0.4050 & 236.8 & 386.7 & 0.6890 & 0.8 \\
+Ridge (tuned) & 0.4057 & 236.8 & 386.2 & 0.6880 & 0.7 \\
+Ridge & 0.4057 & 236.8 & 386.2 & 0.6880 & 0.7 \\
+\bottomrule
+\end{tabular}

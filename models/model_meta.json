@@ -1,0 +1,182 @@
+{
+  "model": "XGBoost",
+  "task": "regression",
+  "target": "trip_duration",
+  "target_transform": "log1p",
+  "target_inverse": "expm1",
+  "target_unit_after_inverse": "giây",
+  "features": [
+    "passenger_count",
+    "store_and_fwd_flag",
+    "pickup_longitude",
+    "pickup_latitude",
+    "dropoff_longitude",
+    "dropoff_latitude",
+    "hour",
+    "weekday",
+    "month",
+    "day_of_year",
+    "week_hour",
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "dist_haversine",
+    "dist_manhattan",
+    "log_dist",
+    "bearing",
+    "delta_lat",
+    "delta_lon",
+    "center_lat",
+    "center_lon",
+    "pickup_jfk",
+    "dropoff_jfk",
+    "pickup_lga",
+    "dropoff_lga",
+    "pickup_ewr",
+    "dropoff_ewr",
+    "is_airport_trip",
+    "vendor_id"
+  ],
+  "n_features": 30,
+  "n_train_rows": 1152600,
+  "n_holdout_rows": 288151,
+  "sample_mode": "fast",
+  "sample_size": 200000,
+  "metrics_test": {
+    "Holdout_RMSLE": 0.2989692105608415,
+    "Holdout_MAE_log": 0.21706317365169525,
+    "Holdout_MAE_seconds": 162.8328619611803,
+    "Holdout_RMSE_seconds": 287.7988441681979,
+    "Holdout_R2": 0.8305330276489258,
+    "Training_time": 46.9
+  },
+  "threshold": null,
+  "train_range": {
+    "passenger_count": [
+      1.0,
+      6.0
+    ],
+    "store_and_fwd_flag": [
+      0.0,
+      1.0
+    ],
+    "pickup_longitude": [
+      -74.25053405761719,
+      -73.69091033935547
+    ],
+    "pickup_latitude": [
+      40.50629425048828,
+      40.911556243896484
+    ],
+    "dropoff_longitude": [
+      -74.26747131347656,
+      -73.6804428100586
+    ],
+    "dropoff_latitude": [
+      40.50859832763672,
+      40.91999816894531
+    ],
+    "hour": [
+      0.0,
+      23.0
+    ],
+    "weekday": [
+      0.0,
+      6.0
+    ],
+    "month": [
+      1.0,
+      6.0
+    ],
+    "day_of_year": [
+      1.0,
+      182.0
+    ],
+    "week_hour": [
+      0.0,
+      167.0
+    ],
+    "is_weekend": [
+      0.0,
+      1.0
+    ],
+    "hour_sin": [
+      -1.0,
+      1.0
+    ],
+    "hour_cos": [
+      -1.0,
+      1.0
+    ],
+    "dist_haversine": [
+      0.0500059500336647,
+      44.74203872680664
+    ],
+    "dist_manhattan": [
+      0.05217352136969566,
+      59.09811019897461
+    ],
+    "log_dist": [
+      0.04879583418369293,
+      3.8230178356170654
+    ],
+    "bearing": [
+      -179.99270629882812,
+      180.0
+    ],
+    "delta_lat": [
+      -0.24957275390625,
+      0.359771728515625
+    ],
+    "delta_lon": [
+      -0.48769378662109375,
+      0.3919525146484375
+    ],
+    "center_lat": [
+      40.5074462890625,
+      40.91246032714844
+    ],
+    "center_lon": [
+      -74.2483901977539,
+      -73.70821380615234
+    ],
+    "pickup_jfk": [
+      0.0,
+      1.0
+    ],
+    "dropoff_jfk": [
+      0.0,
+      1.0
+    ],
+    "pickup_lga": [
+      0.0,
+      1.0
+    ],
+    "dropoff_lga": [
+      0.0,
+      1.0
+    ],
+    "pickup_ewr": [
+      0.0,
+      1.0
+    ],
+    "dropoff_ewr": [
+      0.0,
+      1.0
+    ],
+    "is_airport_trip": [
+      0.0,
+      1.0
+    ],
+    "vendor_id": [
+      1.0,
+      2.0
+    ]
+  },
+  "versions": {
+    "sklearn": "1.6.1",
+    "pandas": "2.3.3",
+    "numpy": "2.1.3",
+    "xgboost": "3.4.1"
+  }
+}

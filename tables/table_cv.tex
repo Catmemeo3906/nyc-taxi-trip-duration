@@ -1,0 +1,12 @@
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Model & RMSLE (log) $\downarrow$ & $\pm$ s.d. & Train (log) & MAE (s) $\downarrow$ & RMSE (s) $\downarrow$ & $R^2$ (log) $\uparrow$ & Time (s) \\
+\midrule
+\textbf{XGBoost} & \textbf{0.3071} & \textbf{0.0015} & \textbf{0.2481} & \textbf{167.9} & \textbf{295.7} & \textbf{0.8217} & \textbf{39.6} \\
+Random Forest & 0.3297 & 0.0023 & 0.2643 & 183.1 & 316.1 & 0.7945 & 227.5 \\
+MLP & 0.3459 & 0.0019 & 0.3414 & 195.7 & 342.2 & 0.7738 & 112.5 \\
+Linear (baseline) & 0.4035 & 0.0026 & 0.4034 & 235.2 & 385.2 & 0.6923 & 3.9 \\
+Ridge & 0.4046 & 0.0027 & 0.4045 & 235.8 & 385.8 & 0.6906 & 3.4 \\
+Mean predictor & 0.7274 & 0.0016 & 0.7274 & 443.0 & 689.9 & 0.0000 & 2.9 \\
+\bottomrule
+\end{tabular}
